@@ -1,0 +1,9 @@
+# Dependencias (pesan demasiado y se reconstruyen)
+node_modules/
+
+# Variables de entorno (contienen tus contraseñas y llaves secretas)
+.env
+
+# Archivos de log y temporales
+npm-debug.log*
+.DS_Store

@@ -1,0 +1,15 @@
+HTTP
+### Prueba 1: Verificar el estado del Servidor y la Base de Datos
+GET http://localhost:3000/api/status
+
+###
+
+### Prueba 2: Registrar un nuevo Operador en la Fábrica
+POST http://localhost:3000/api/operadores
+Content-Type: application/json
+
+{
+  "nombre": "Carlos Mendoza",
+  "codigo_empleado": "OP-001",
+  "turno": "Tarde"
+}

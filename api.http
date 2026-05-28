@@ -13,3 +13,14 @@ Content-Type: application/json
   "codigo_empleado": "OP-001",
   "turno": "Tarde"
 }
+
+###
+
+### Prueba 3: Registrar una nueva Máquina en la Planta
+POST http://localhost:3000/api/maquinas
+Content-Type: application/json
+
+{
+  "nombre": "Inyectora de Zamak 01",
+  "tipo": "Inyección de alta presión"
+}

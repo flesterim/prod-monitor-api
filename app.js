@@ -9,11 +9,13 @@ app.use(express.json())
 const statusRoutes = require('./src/routes/statusRoutes')
 const operadorRoutes = require('./src/routes/operadorRoutes')
 const maquinaRoutes = require('./src/routes/maquinaRoutes')
+const produccionRoutes = require('./src/routes/produccionRoutes')
 
 // Definimos un prefijo para todas nuestras rutas de la API
 app.use('/api/status', statusRoutes);
 app.use('/api/operadores', operadorRoutes)
 app.use('/api/maquinas', maquinaRoutes)
+app.use('/api/produccion', produccionRoutes)
 
 app.get('/', (req, res) => {
     res.send('Bienvenido a la API de Monitoreo de Producción. Visita /api/status');

@@ -24,3 +24,16 @@ Content-Type: application/json
   "nombre": "Inyectora de Zamak 01",
   "tipo": "Inyección de alta presión"
 }
+
+###
+
+### Prueba 4: Registrar un reporte de producción real
+POST http://localhost:3000/api/produccion
+Content-Type: application/json
+
+{
+  "id_operador": 999,
+  "id_maquina": 23,
+  "cantidad_buena": 150,
+  "cantidad_mala": 5
+}
